@@ -59,5 +59,26 @@ npm run dev
 4. Try to click **ARM**. *It's disabled*. You must add waypoints to the map and click **Anchor Mission Integrity**.
 5. Finally, hit **VERIFY PAYLOAD** in the top navigation, paste the resulting Hash or TxID, and watch the system physically confirm your anchored flight path against the active Stellar ledger natively.
 
+## 🐳 Deployment with Docker
+
+For a streamlined, containerized experience, you can launch the entire ecosystem (Frontend & Backend) using Docker Compose.
+
+### 1. Requirements
+Ensure you have **Docker** and **Docker Compose** installed on your system.
+
+### 2. Launch the Stack
+From the project root, run:
+```bash
+docker-compose up --build
+```
+This command will:
+- Build the Node.js backend environment.
+- Build the React/Vite frontend environment.
+- Orchestrate the networking and port mapping automatically.
+
+### 3. Access the Services
+- **Ground Control Station (Frontend)**: `http://localhost:5173`
+- **Middleware Gateway (Backend)**: `http://localhost:3000`
+
 ---
 *Built to redefine aerial command boundaries.*
